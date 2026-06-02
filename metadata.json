@@ -11,5 +11,57 @@
         "created_at": "2026-06-02T16:49:38.463Z",
         "updated_at": "2026-06-02T16:49:38.463Z",
         "type": "plugin"
+    },
+    {
+        "id": "NGzKBb7g5v8bVBxA6YTqYoIGEMOLHO6G",
+        "plugin": "obsidian-outliner",
+        "type": "plugin",
+        "language": "zh-cn",
+        "version": "4.10.1",
+        "supported_versions": "4.10.1",
+        "title": "[zh-tw] Outliner",
+        "description": "Outliner Localization & Tweaks",
+        "hash": "5991c0525991c0525991c0525991c052",
+        "created_at": "2026-06-02T17:14:22.839Z",
+        "updated_at": "2026-06-02T17:14:22.839Z"
+    },
+    {
+        "id": "1hROonqR-z8tHqA5iEGexH2UjW9T9Ff3",
+        "plugin": "obsidian-outliner",
+        "type": "plugin",
+        "language": "zh-cn",
+        "version": "2.0.0",
+        "supported_versions": "4.9.0",
+        "title": "Outliner",
+        "description": "Work with your lists like in Workflowy or RoamResearch.",
+        "hash": "7caa6d667caa6d667caa6d667caa6d66",
+        "created_at": "2026-06-02T17:14:22.839Z",
+        "updated_at": "2026-06-02T17:14:22.839Z"
+    },
+    {
+        "id": "GCHSnndVQFsHPudwnqr3su5lJ6oe6Kdb",
+        "plugin": "obsidian-minimal-settings",
+        "type": "plugin",
+        "language": "zh-cn",
+        "version": "1.0.0",
+        "supported_versions": "8.2.3",
+        "title": "Minimal Theme Settings",
+        "description": "Minimal Theme Settings Localization & Tweaks",
+        "hash": "7cf86f0c7cf86f0c7cf86f0c7cf86f0c",
+        "created_at": "2026-06-02T17:14:22.840Z",
+        "updated_at": "2026-06-02T17:14:22.840Z"
+    },
+    {
+        "id": "mnjv50vHIkk4posMhNSbrehY5jnEekGv",
+        "plugin": "obsidian-auto-link-title",
+        "type": "plugin",
+        "language": "zh-cn",
+        "version": "1.0.0",
+        "supported_versions": "1.5.5",
+        "title": "Auto Link Title：自动获取超链接标题",
+        "description": "Auto Link Title：自动获取超链接标题 Localization & Tweaks",
+        "hash": "6f6f02d96f6f02d96f6f02d96f6f02d9",
+        "created_at": "2026-06-02T17:14:22.839Z",
+        "updated_at": "2026-06-02T17:14:22.839Z"
     }
 ]
