@@ -1,0 +1,298 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "obsidian-auto-link-title",
+        "version": "1.0.0",
+        "title": "Auto Link Title：自动获取超链接标题",
+        "description": "Auto Link Title：自动获取超链接标题 Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "1.5.5",
+        "author": "阿琼"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "链接预览API密钥长度不足32个字符，请检查设置",
+                    "target": "链接预览API密钥长度不足32个字符，检查设置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "正在加载 Obsidian 自动链接标题",
+                    "target": "正在加载 Obsidian 自动链接标题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "标题通过链接预览失败，回退到抓取器",
+                    "target": "标题通过链接预览失败，回退到抓取器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "使用新的爬虫",
+                    "target": "使用新的爬虫"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "使用旧版爬虫",
+                    "target": "使用旧版爬虫"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "卸载 Obsidian 自动链接标题插件",
+                    "target": "卸载 Obsidian 自动链接标题插件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "使用默认粘贴命令在编辑器中粘贴链接时，获取链接标题",
+                    "target": "使用默认粘贴命令在编辑器中粘贴链接时，获取链接标题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "从其他程序拖放链接时获取链接标题",
+                    "target": "从其他程序拖放链接时获取链接标题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "设置标题的最大长度。设置为 0 则禁用.",
+                    "target": "设置标题的最大长度。设置为 0 则禁用."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "粘贴时是否优先使用选中的文本而非获取的标题作为标题",
+                    "target": "粘贴时是否优先使用选中的文本而非获取的标题作为标题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "禁止自动完成网站标题的字符串列表（逗号分隔）。可以是 URL 或任意文本.",
+                    "target": "禁止自动完成网站标题的字符串列表（逗号分隔）。可以是 URL 或任意文本."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "使用实验性新版抓取器，在桌面端效果良好但移动端可能不佳。",
+                    "target": "使用实验性新版抓取器，在桌面端效果良好但移动端可能不佳。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "获取链接标题时使用更易读的占位符",
+                    "target": "获取链接标题时使用更易读的占位符"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "LinkPreview.net 服务的 API 密钥。请访问 https://my.linkpreview.net/access_keys 获取",
+                    "target": "LinkPreview.net 服务的 API 密钥。请访问 https://my.linkpreview.net/access_keys 获取"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "增强默认粘贴",
+                    "target": "增强默认粘贴"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "增强拖放事件",
+                    "target": "增强拖放事件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "最大标题长度",
+                    "target": "最大标题长度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "将所选文字保留为标题",
+                    "target": "将所选文字保留为标题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "网站黑名单",
+                    "target": "网站黑名单"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "使用新爬虫",
+                    "target": "使用新爬虫"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "使用更好的获取占位符",
+                    "target": "使用更好的获取占位符"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "链接预览 API 密钥",
+                    "target": "链接预览 API 密钥"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "localhost, tiktok.com",
+                    "target": "localhost, tiktok.com"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "链接预览API密钥必须为32个字符",
+                    "target": "链接预览API密钥必须为32个字符"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "粘贴链接并自动获取标题",
+                    "target": "粘贴链接并自动获取标题"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "正常粘贴（无获取行为）",
+                    "target": "正常粘贴（无获取行为）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "使用链接和标题增强现有 URL",
+                    "target": "使用链接和标题增强现有 URL"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"增强默认粘贴\")",
+                    "target": "setName(\"增强默认粘贴\")"
+                },
+                {
+                    "source": "setDesc(\"使用默认粘贴命令在编辑器中粘贴链接时，获取链接标题\")",
+                    "target": "setDesc(\"使用默认粘贴命令在编辑器中粘贴链接时，获取链接标题\")"
+                },
+                {
+                    "source": "setName(\"增强拖放事件\")",
+                    "target": "setName(\"增强拖放事件\")"
+                },
+                {
+                    "source": "setDesc(\"从其他程序拖放链接时获取链接标题\")",
+                    "target": "setDesc(\"从其他程序拖放链接时获取链接标题\")"
+                },
+                {
+                    "source": "setName(\"最大标题长度\")",
+                    "target": "setName(\"最大标题长度\")"
+                },
+                {
+                    "source": "setDesc(\"设置标题的最大长度。设置为 0 则禁用.\")",
+                    "target": "setDesc(\"设置标题的最大长度。设置为 0 则禁用.\")"
+                },
+                {
+                    "source": "setName(\"将所选文字保留为标题\")",
+                    "target": "setName(\"将所选文字保留为标题\")"
+                },
+                {
+                    "source": "setDesc(\"粘贴时是否优先使用选中的文本而非获取的标题作为标题\")",
+                    "target": "setDesc(\"粘贴时是否优先使用选中的文本而非获取的标题作为标题\")"
+                },
+                {
+                    "source": "setName(\"网站黑名单\")",
+                    "target": "setName(\"网站黑名单\")"
+                },
+                {
+                    "source": "setDesc(\"禁止自动完成网站标题的字符串列表（逗号分隔）。可以是 URL 或任意文本.\")",
+                    "target": "setDesc(\"禁止自动完成网站标题的字符串列表（逗号分隔）。可以是 URL 或任意文本.\")"
+                },
+                {
+                    "source": "setPlaceholder(\"localhost, tiktok.com\")",
+                    "target": "setPlaceholder(\"localhost, tiktok.com\")"
+                },
+                {
+                    "source": "setName(\"使用新爬虫\")",
+                    "target": "setName(\"使用新爬虫\")"
+                },
+                {
+                    "source": "setDesc(\"使用实验性新版抓取器，在桌面端效果良好但移动端可能不佳。\")",
+                    "target": "setDesc(\"使用实验性新版抓取器，在桌面端效果良好但移动端可能不佳。\")"
+                },
+                {
+                    "source": "setName(\"使用更好的获取占位符\")",
+                    "target": "setName(\"使用更好的获取占位符\")"
+                },
+                {
+                    "source": "setDesc(\"获取链接标题时使用更易读的占位符\")",
+                    "target": "setDesc(\"获取链接标题时使用更易读的占位符\")"
+                },
+                {
+                    "source": "setName(\"链接预览 API 密钥\")",
+                    "target": "setName(\"链接预览 API 密钥\")"
+                },
+                {
+                    "source": "setDesc(\"LinkPreview.net 服务的 API 密钥。请访问 https://my.linkpreview.net/access_keys 获取\")",
+                    "target": "setDesc(\"LinkPreview.net 服务的 API 密钥。请访问 https://my.linkpreview.net/access_keys 获取\")"
+                },
+                {
+                    "source": "log(\"正在加载 Obsidian 自动链接标题\")",
+                    "target": "log(\"正在加载 Obsidian 自动链接标题\")"
+                },
+                {
+                    "source": "log(`在当前编辑器中未找到文本“${pasteId}”，操作中止；链接 ${url}`)",
+                    "target": "log(`在当前编辑器中未找到文本“${pasteId}”，操作中止；链接 ${url}`)"
+                },
+                {
+                    "source": "log(`通过链接预览标题：${title} `)",
+                    "target": "log(`通过链接预览标题：${title} `)"
+                },
+                {
+                    "source": "log(\"标题通过链接预览失败，回退到抓取器\")",
+                    "target": "log(\"标题通过链接预览失败，回退到抓取器\")"
+                },
+                {
+                    "source": "log(\"使用新的爬虫\")",
+                    "target": "log(\"使用新的爬虫\")"
+                },
+                {
+                    "source": "log(\"使用旧版爬虫\")",
+                    "target": "log(\"使用旧版爬虫\")"
+                },
+                {
+                    "source": "log(`标题: ${title}`)",
+                    "target": "log(`标题: ${title}`)"
+                },
+                {
+                    "source": "log(\"卸载 Obsidian 自动链接标题插件\")",
+                    "target": "log(\"卸载 Obsidian 自动链接标题插件\")"
+                },
+                {
+                    "source": "name = \"SuppressedError\"",
+                    "target": "name = \"SuppressedError\""
+                },
+                {
+                    "source": "name: \"粘贴链接并自动获取标题\"",
+                    "target": "name: \"粘贴链接并自动获取标题\""
+                },
+                {
+                    "source": "name: \"正常粘贴（无获取行为）\"",
+                    "target": "name: \"正常粘贴（无获取行为）\""
+                },
+                {
+                    "source": "name: \"使用链接和标题增强现有 URL\"",
+                    "target": "name: \"使用链接和标题增强现有 URL\""
+                }
+            ]
+        }
+    }
+}
